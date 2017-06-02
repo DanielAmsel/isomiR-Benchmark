@@ -38,15 +38,15 @@ Since it is a pure perl file, no installation is needed. Tested on Linux.
 `<mature_mirs.fasta>`  := The mature microRNA set of your species of interest  <br/>
 `<hairpin_mirs.fasta>` := The hairpin microRNA set of your species of interst  <br/>
 #### Output :
-|output file                          |        description    |
-| ---                                 | ---                   |
-|`mature_mirs.fasta-FIVE_ADD.fa`      |   <br/>               |
-|`mature_mirs.fasta-THREE_ADD.fa`     |   <br/>               |
-|`mature_mirs.fasta-THREE_DEL.fa`     |   <br/>               |
-|`mature_mirs.fasta-FIVE_DEL.fa`      |   <br/>               |
-|`mature_mirs.fasta-SNP_SEED.fa`      |   <br/>               |
-|`mature_mirs.fasta-SNP_REST.fa`      |   <br/>               |
-|`mature_mirs.fasta-NON_TEMPLATE.fa`  |   <br/>               |
+|output file                          |        description                                 |
+| ---                                 | ---                                                |
+|`mature_mirs.fasta-FIVE_ADD.fa`      | template 5' additions (1-3nt)  <br/>               |
+|`mature_mirs.fasta-THREE_ADD.fa`     | template 3' additions (1-3nt)  <br/>               |
+|`mature_mirs.fasta-THREE_DEL.fa`     | terminal 3' deletions (1-3nt)  <br/>               |
+|`mature_mirs.fasta-FIVE_DEL.fa`      | terminal 5' deletions (1-3nt)  <br/>               |
+|`mature_mirs.fasta-SNP_SEED.fa`      | SNPs in seed region (1-8)  <br/>                   |
+|`mature_mirs.fasta-SNP_REST.fa`      | SNPs outside the seed region (9-end)  <br/>        |
+|`mature_mirs.fasta-NON_TEMPLATE.fa`  | non-template 3' additions (1-3nt)  <br/>           |
 
 
 ## Evaluate isomiR mining tools
