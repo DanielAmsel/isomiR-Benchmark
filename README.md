@@ -51,10 +51,12 @@ Since it is a pure perl file, no installation is needed. Tested on Linux.
 
 ## Evaluate isomiR mining tools
 
-### Tool 1:
+### Tool 1: eval_isomiRID_0.3.pl
 
 
-### Tool 2:
+### Tool 2: eval_miraligner_0.3.pl
 
 
-### Tool 3:
+### Tool 3: eval_isomiR-SEA_0.3.pl
+
+
