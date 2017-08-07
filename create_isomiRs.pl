@@ -25,10 +25,9 @@ my $precursor_file	= $ARGV[1];		# file of precursor miRs
 
 
 
-if( $ARGV[0] eq '-h' || $ARGV[0] eq '-help'|| $ARGV[0] eq '' || $ARGV[0] eq '--h' || $ARGV[0] eq '--help')
-{
-help();
-exit;
+if( $ARGV[0] eq '-h' || $ARGV[0] eq '-help'|| $ARGV[0] eq '' || $ARGV[0] eq '--h' || $ARGV[0] eq '--help'){
+	help();
+	exit;
 }
 
 
@@ -217,7 +216,7 @@ sub snp_seed{
 	my @ss_nt	= ('A','T','C','G');
 	my %ss_hash;	#{seq}	=\@(id1,id2,..)
 	my $ss_id;	# tca-miR-92c-5p
-	open(SS,"<",$ss_file) or die " Can't open $pf_file:\n$!\n";
+	open(SS,"<",$ss_file) or die " Can't open $ss_file:\n$!\n";
 	while(<SS>){
 		chomp;
 		my $ss_line	= $_;
@@ -261,7 +260,7 @@ sub snp_rest{
 	my @sr_nt	= ('A','T','C','G');
 	my %sr_hash;	#{seq} =\@(id1,id2,..)
 	my $sr_id;
-	open(SR,"<",$sr_file) or die " Can't open $pf_file:\n$!\n";
+	open(SR,"<",$sr_file) or die " Can't open $sr_file:\n$!\n";
 	while(<SR>){
 		chomp;
 		my $sr_line	= $_;
@@ -303,7 +302,7 @@ sub non_template{
 	my @nt_nt	= ('A','T','C','G');
 	my %nt_hash;
 	my $nt_id;
-	open(NT,"<",$nt_file) or die " Can't open $pf_file:\n$!\n";
+	open(NT,"<",$nt_file) or die " Can't open $nt_file:\n$!\n";
 	while(<NT>){
 		chomp;
 		my $nt_line	= $_;
@@ -352,7 +351,7 @@ sub tp_add{
 	my %tpa_hash;
 	my $tpa_id;
 	my $tpa_idp;
-	open(TPA,"<",$tpa_file) or die " Can't open $pf_file:\n$!\n";
+	open(TPA,"<",$tpa_file) or die " Can't open $tpa_file:\n$!\n";
 	while(<TPA>){
 		chomp;
 		my $tpa_line	= $_;
@@ -431,7 +430,7 @@ sub fp_add{
 	my %fpa_hash;				# return_hash{$seq}=\@(id1,id2,..)
 	my $fpa_id;
 	my $fpa_idp;
-	open(FPA,"<",$fpa_file) or die " Can't open $pf_file:\n$!\n";
+	open(FPA,"<",$fpa_file) or die " Can't open $fpa_file:\n$!\n";
 	while(<FPA>){
 		chomp;
 		my $fpa_line	= $_;
@@ -500,7 +499,7 @@ sub five_sub{
         my $fs_file     = $_[0];
         my %fs_hash;
         my $fs_id;
-        open(FS,"<",$fs_file) or die " Can't open $pf_file:\n$!\n";
+        open(FS,"<",$fs_file) or die " Can't open $fs_file:\n$!\n";
         while(<FS>){
                 chomp;
                 my $fs_line     = $_;
@@ -539,7 +538,7 @@ sub three_sub{
         my $ts_file     = $_[0];
         my %ts_hash;
         my $ts_id;
-        open(TS,"<",$ts_file) or die " Can't open $pf_file:\n$!\n";
+        open(TS,"<",$ts_file) or die " Can't open $ts_file:\n$!\n";
         while(<TS>){
                 chomp;
                 my $ts_line     = $_;
