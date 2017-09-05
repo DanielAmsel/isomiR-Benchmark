@@ -60,3 +60,4 @@ Since it is a pure perl file, no installation is needed. Tested on Linux.
 ### Tool 3: eval_isomiR-SEA_0.3.pl
 
 
+All scripts come without warranty.
